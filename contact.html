@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    /* font */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: genshin-impact-font;
+        src: url("zh-cn.ttf");
+    }
+
+    div {
+        font-family: genshin-impact-font;
+    }
+
+    /* bg */
+
+    body {
+        width: 100%;
+        max-width: 1920px;
+        font-family: genshin-impact-font;
+        padding: 1px;
+        background-image: url('teyvat.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* navbar */
+
+    ul {
+        border-radius: 15px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.654);
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        color: #ffffff;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        border-radius: 15px;
+        background-color: #111;
+    }
+
+    .active {
+        border-radius: 15px;
+        color: black;
+        background-color: #ffd900;
+        text-shadow: 1.5px 1.5px 1.5px rgb(255, 255, 255);
+    }
+
+    /* yuh */
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        border-radius: 25px;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* content */
+
+    .header {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    .column {
+        text-align: center;
+        border-radius: 25px;
+        width: 50%;
+        background-color: #ffd900;
+        margin: auto;
+    }
+
+    .card1 {
+        border-radius: 25px 25px 0px 0px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-top: 1px;
+    }
+
+    .card2 {
+        border-radius: 0px 0px 25px 25px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-top: 1px;
+    }
+
+    .toprow {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-top: 1px;
+    }
+
+    .bottomrow {
+        border-radius: 0px 0px 25px 25px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 20px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.654);
+        color: rgb(255, 255, 255);
+        text-align: left;
+        font-size: 8px;
+    }
+
+    /* misc idk omg i just realized how cute this font looks */
+
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    .shadow {
+        text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+</style>
+
+<title>Twins in Teyvat: Contact</title>
+
+</head>
+
+<body>
+
+    <ul>
+        <li class="shadow"><a href="index.html">Home</a></li>
+        <li class="shadow"><a href="content.html">Zine Content</a></li>
+        <li><a class="active" href="#about">Contact</a></li>
+        <li class="shadow"><a href="about.html">About</a></li>
+        <li class="shadow" style="float:right"><a href="preorder.html">Pre-order here!</a></li>
+    </ul>
+
+    <div class="header">
+        <h1><img src="twins.png" alt="Twins in Teyvat" height="150" width="150"></h1>
+    </div>
+    <div class="shadow">
+        <h2>Contact us here!</h2>
+    </div>
+
+    <div class="column">
+        <div class="card1">
+            <h5>Where you can contact us:</h5>
+            <h5>Official Zine </h5>
+            <div class="dropdown">
+                <span>&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;</span>
+                <div class="dropdown-content">
+                    <p>idksomerandomfbacc</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span>&nbsp;&nbsp;&nbsp;Instagram&nbsp;&nbsp;&nbsp;</span>
+                <div class="dropdown-content">
+                    <p>@idksomerandominstaacc</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span>&nbsp;&nbsp;&nbsp;E-mail (Business Inquiries)&nbsp;&nbsp;&nbsp;</span>
+                <div class="dropdown-content">
+                    <p>idksomerandomemail@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="toprow">
+
+                <h5> Regine </h5>
+
+                <img src="hydro.png" alt="Hydro symbol" width="100" height="100">
+
+                <div class="dropdown">
+                    <span>&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;</span>
+                    <div class="dropdown-content">
+                        <p>idksomerandomfbacc</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>&nbsp;&nbsp;&nbsp;Instagram&nbsp;&nbsp;&nbsp;</span>
+                    <div class="dropdown-content">
+                        <p>@idksomerandominstaacc</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>&nbsp;&nbsp;&nbsp;Twitter&nbsp;&nbsp;&nbsp;</span>
+                    <div class="dropdown-content">
+                        <p>@idksomerandomtwtacc</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>&nbsp;&nbsp;&nbsp;E-mail (Business Inquiries)&nbsp;&nbsp;&nbsp;</span>
+                    <div class="dropdown-content">
+                        <p>idksomerandomemail@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomrow">
+
+                <h5> Mika </h5>
+
+                <img src="anemo.png" alt="Anemo symbol" width="100" height="100">
+
+                <div class="dropdown">
+                    <span>&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;</span>
+                    <div class="dropdown-content">
+                        <p>idksomerandomfbacc</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>&nbsp;&nbsp;&nbsp;Instagram&nbsp;&nbsp;&nbsp;</span>
+                    <div class="dropdown-content">
+                        <p>@idksomerandominstaacc</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>&nbsp;&nbsp;&nbsp;Twitter&nbsp;&nbsp;&nbsp;</span>
+                    <div class="dropdown-content">
+                        <p>@idksomerandomtwtacc</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>&nbsp;&nbsp;&nbsp;E-mail (Business Inquiries)&nbsp;&nbsp;&nbsp;</span>
+                    <div class="dropdown-content">
+                        <p>idksomerandomemail@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="shadow">
+          <p>Photo/s: Hoyoverse, all rights reserved.</p>
+        </div>
+      </div>
+
+</body>
+
+</html>

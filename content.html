@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    /* font */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: genshin-impact-font;
+        src: url("zh-cn.ttf");
+    }
+
+    div {
+        font-family: genshin-impact-font;
+    }
+
+    /* bg */
+
+    body {
+        width: 100%;
+        max-width: 1920px;
+        font-family: genshin-impact-font;
+        padding: 1px;
+        background-image: url('teyvat.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* navbar */
+
+    ul {
+        border-radius: 15px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.654);
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        color: #ffffff;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        border-radius: 15px;
+        background-color: #111;
+    }
+
+    .active {
+        border-radius: 15px;
+        color: black;
+        background-color: #ffd900;
+        text-shadow: 1.5px 1.5px 1.5px rgb(255, 255, 255);
+    }
+
+    .header {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    /* gallery dududu */
+
+    div.gallery {
+        border-radius: 0px 0px 15px 15px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    div.gallery:hover {
+        border-radius: 0px 0px 15px 15px;
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.654);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* nisc idk omg i just realized how cute this font looks */
+
+    .shadow {
+        color: white;
+        text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+</style>
+
+<title>Twins in Teyvat: Zine sneak peak</title>
+
+</head>
+
+<body>
+
+    <ul>
+        <li class="shadow"><a href="index.html">Home</a></li>
+        <li><a class="active" href="#content">Zine Content</a></li>
+        <li class="shadow"><a href="contact.html">Contact</a></li>
+        <li class="shadow"><a href="about.html">About</a></li>
+        <li class="shadow" style="float:right"><a href="preorder.html">Pre-order here!</a></li>
+    </ul>
+
+    <div class="header">
+        <h1><img src="twins.png" alt="Twins in Teyvat" height="150" width="150"></h1>
+    </div>
+    <div class="shadow">
+        <h2>Zine sneak peak!</h2>
+
+        <h4>Small zine snippets.</h4>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="aetherluminedainpaimon.png">
+                <img src="aetherluminedainpaimon.png" alt="Aether and Lumine bonding with Dainsleif and Paimon"
+                    width="600" height="400">
+            </a>
+            <div class="shadow">
+                <div class="desc">Art by @kurogesyadu on Twitter.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="aetherlumineunited.png">
+                <img src="aetherlumineunited.png" alt="Aether and Lumine hugging" width="600" height="400">
+            </a>
+            <div class="shadow">
+                <div class="desc">Art by @nadhh20 on Twitter.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="babyaethernlumine.png">
+                <img src="babyaethernlumine.png" alt="Baby Aether and Lumine" width="600" height="400">
+            </a>
+            <div class="shadow">
+                <div class="desc">Art by @maturingo37 on Twitter.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="lumineandaetherabyssmage.png">
+                <img src="lumineandaetherabyssmage.png" alt="Lumine and Aether as Abyss Mages" width="600" height="400">
+            </a>
+            <div class="shadow">
+                <div class="desc">Art by
+                    @SSm82048039 on Twitter.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+</body>
+
+</html>

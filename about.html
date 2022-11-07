@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  /* font */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: genshin-impact-font;
+    src: url("zh-cn.ttf");
+  }
+
+  div {
+    font-family: genshin-impact-font;
+  }
+
+  /* bg */
+
+  body {
+    width: 100%;
+    max-width: 1920px;
+    font-family: genshin-impact-font;
+    padding: 1px;
+    background-image: url('teyvat.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* navbar */
+
+  ul {
+    border-radius: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.654);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    border-radius: 15px;
+    background-color: #111;
+  }
+
+  .active {
+    border-radius: 15px;
+    color: black;
+    background-color: #ffd900;
+    text-shadow: 1.5px 1.5px 1.5px rgb(255, 255, 255);
+  }
+
+  /* yuh */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    border-radius: 25px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* content */
+
+  .header {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .leftcolumn {
+    float: left;
+    border-radius: 25px;
+    width: 49%;
+    background-color: #ffd900;
+  }
+
+  .rightcolumn {
+    float: right;
+    border-radius: 25px;
+    width: 49%;
+    background-color: #ffd900;
+  }
+
+  .card1 {
+    border-radius: 25px 25px 0px 0px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .card2 {
+    border-radius: 0px 0px 25px 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 1px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.654);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 8px;
+  }
+
+  /* images */
+
+  #mika {
+    border-radius: 25px;
+    background: url(jean2.png);
+    background-size: cover;
+    padding: 20px;
+    width: 280px;
+    height: 280px;
+    float: right;
+  }
+
+  #regine {
+    border-radius: 25px;
+    background: url(barbara2.png);
+    background-size: cover;
+    padding: 20px;
+    width: 280px;
+    height: 280px;
+    float: right;
+  }
+
+  /* nisc idk omg i just realized how cute this font looks */
+
+  .shadow {
+    text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+</style>
+
+<title>Twins in Teyvat: Info</title>
+
+</head>
+
+<body>
+
+  <ul>
+    <li class="shadow"><a href="index.html">Home</a></li>
+    <li class="shadow"><a href="content.html">Zine Content</a></li>
+    <li class="shadow"><a href="contact.html">Contact</a></li>
+    <li><a class="active" href="#about">About</a></li>
+    <li class="shadow" style="float:right"><a href="preorder.html">Pre-order here!</a></li>
+  </ul>
+
+  <div class="header">
+    <h1><img src="twins.png" alt="Twins in Teyvat" height="150" width="150"></h1>
+  </div>
+
+  <div class="leftcolumn">
+    <div class="card1">
+      <div id="regine"></div>
+      <h2>Regine</h2>
+      <h5>"I LOVE TACOS!!!"</h5>
+      <p>-Regine, 2022</p>
+      <p>Hi guys! my name is Regine and I am one of the writers in this zine. I first found interest in Genshin Impact
+        through my sister, where I saw how she played almost 24/7. Because of her, I got interested to try the game for
+        once.
+        On my account, she even wished for my favorite character, Hu Tao! I'm really happy how she helps me all the time
+        even in game.
+        While playing, we'd have conversations about characters in game. I like to imagine that Hu Tao is a cat person
+        ^^</p>
+        <div class="dropdown">
+          <span>My top #3 fav things in life (Hover here!)</span>
+        <div class="dropdown-content">
+<p>1. Burger King 4 Cheese Whopper and that's final. (Maybe drawing too ehe)</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="card2">
+      <h2>Regine's words to the fans:</h2>
+      <h5>Published Aug 26, 2022</h5>
+      <p>Hellaur gois!!!</p>
+      <p>I'm still in elementary but my schedules pretty jampacked lately ehe. Our zine is a little something I like to
+        work on.
+        You can say that it's my personal stress reliever. I love working on it with my sister becaue I get to express
+        my ideas!!!
+        If you ask me, I wanna be an artist when I grow up. My family is full of artists, whether it be music or
+        painting. I wanna
+        follow their footsteps and be one too!!!! I mostly learn from my big sis and get inspiration from her as well.
+        She does
+        digital art and so do I ehe. I show my art to her a lot and I look forward to working with her more!!
+      </p>
+      <p>Please do spare some time to check out the zine we worked on!!!</p>
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card1">
+      <div id="mika"></div>
+      <h2>Mika</h2>
+      <h5>"#1 Nahida fan!!!"</h5>
+      <p>-Mika, 2022</p>
+      <p>Hi readers! My sister and I are very proud to release this small project of ours. Before, it was just a small
+        fantasy
+        of ours wanting to make a wholesome zine. We would alway brainstorm, have fun chats and make cute headcanons.
+        Litte did
+        she know, I'd make our ideas come to life! This project is solely dedicated to my sister's happiness. As long as
+        she's
+        happy, so am I.
+      </p>
+      <div class="dropdown">
+        <span>My top #3 fav things in life (Hover here!)</span>
+      <div class="dropdown-content">
+        <ol>
+          <li>My sis cause she's num. 1 in my heart ^^</li>
+          <li>Nahida!!!</li>
+          <li>Sisig tofu (or tofu in general)</li>
+        </ol>
+      </div>
+      </div>
+    </div>
+
+      <div class="card2">
+        <h2>Mika's words to the fans:</h2>
+        <h5>Published Aug 26, 2022</h5>
+        <p>To all the readers out there,</p>
+        <p>I hope this zine would quench your thirst for some sibling bonding. In fact if you have a sibling, you should
+          read
+          this with them! It would be a really fun activity to do so. We have many things in store specially made and
+          tinkered by
+          the creative Regine! and of course, polished by your one and only. Overall, we look forward to making more
+          progress in our zine
+          In the end, it's not about the profit we're after. It's the journey we're about to get into.</p>
+        <p>What are you waiting for? Pre order now!</p>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="shadow">
+        <p>Photo/s: Hoyoverse, all rights reserved.</p>
+      </div>
+    </div>
+
+</body>
+
+</html>
