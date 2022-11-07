@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+/* font */
+
+    @font-face {
+        font-family: genshin-impact-font;
+        src: url("zh-cn.ttf");
+    }
+
+    div {
+        font-family: genshin-impact-font;
+    }
+
+    input {
+        margin: .4rem;
+    }
+
+    body {
+        width: 100%;
+        max-width: 1920px;
+        font-family: genshin-impact-font;
+        padding: 1px;
+        background-image: url('teyvat.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* navbar */
+
+    ul {
+        border-radius: 15px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.654);
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        color: #ffffff;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        border-radius: 15px;
+        background-color: #111;
+    }
+
+    .active {
+        border-radius: 15px;
+        color: black;
+        background-color: #ffd900;
+        text-shadow: 1.5px 1.5px 1.5px rgb(255, 255, 255);
+    }
+
+    /* interactive stuff */
+
+    .styled {
+        font-family: genshin-impact-font;
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: #ffd900;
+    }
+
+    .styled:hover {
+        background-color: #edca00;
+    }
+
+    .styled:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+            inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .header {
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .box {
+    border-radius: 25px 25px 25px 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+    .mainbox {
+        padding: 10px;
+        margin: auto;
+        border-radius: 25px;
+        width: 55%;
+        background-color:rgba(0, 0, 0, 0.654);
+    }
+
+    fieldset {
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .shadow {
+        text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
+    }
+</style>
+
+<title>Twins in Teyvat: Pre-Order</title>
+
+</head>
+
+<body>
+
+    <ul>
+        <li class="shadow"><a href="home.html">Home</a></li>
+        <li class="shadow"><a href="content.html">Zine Content</a></li>
+        <li class="shadow"><a href="contact.html">Contact</a></li>
+        <li class="shadow"><a href="about.html">About</a></li>
+        <li style="float:right"><a class="active" href="#preorder" style="float:right">Pre-order here!</a></li>
+    </ul>
+
+    <div class="header">
+        <h1><img src="twins.png" alt="Twins in Teyvat" height="150" width="150"></h1>
+    </div>
+
+<div class="mainbox">
+    <div class="box">
+        <h1>Please insert the information asked.</h1>
+        <p>(This isn't suppose to work since it's just for display purposes only :>)</p>
+
+        <label for="fakeid1">Phone Number:</label>
+        <input id="fakeid1">
+        <br>
+        <label for="fakeid2">Address:</label>
+        <input id="fakeid2">
+        <br>
+        <label for="fakeid6">Email:</label>
+        <input id="fakeid6">
+        <br>
+        <label for="fakeid7">Twitter:</label>
+        <input id="fakeid7">
+
+        <fieldset>
+            <legend>Mode of recieving:</legend>
+
+            <div>
+                <input type="radio" id="fakeid3" name="drone" value="Delivery">
+                <label for="fakeid3">Delivery</label>
+              </div>
+          
+              <div>
+                <input type="radio" id="fakeid4" name="drone" value="Pick up">
+                <label for="fakeid4">Pick up</label>
+              </div>
+        </fieldset>
+
+        <label for="fakeid5">Num. of Copies (1-10):</label>
+
+        <input type="number" id="fakeid5" name="num" min="1" max="10">
+<p>Billing will be settled through email.</p>
+        <input class="favorite styled" type="button" value="Place order">
+
+    </div>
+</div>
+</body>
+
+</html>
